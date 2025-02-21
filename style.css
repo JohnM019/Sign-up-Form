@@ -72,6 +72,9 @@ fieldset {
     box-shadow: 0 1px 4px #777;
 }
 
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
 input {
     height: 30px;
     width: 250px;
@@ -86,9 +89,7 @@ input:focus {
     border-color: blue;
     box-shadow: 0 2px 3px #444;
 }
-input:invalid {
-    border-color: red;
-}
+
 fieldset > div {
     display: flex;
     flex-direction: column;
